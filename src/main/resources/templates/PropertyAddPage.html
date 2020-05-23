@@ -23,31 +23,31 @@
             <div class = "form-group row ">
                 <label for = "latitude" class = "col-sm-2.5 col-form-label">Enter latitude</label>
                 <div class = "col-sm-4">
-                    <input th:field="*{latitude}" type = "number" min=0 step=0.01 class = "form-control" placeholder = "Enter latitude" required>
+                    <input th:field="*{latitude}" type = "number" step=0.00000001 class = "form-control" placeholder = "Enter latitude" required>
                 </div>
             </div>
             <div class = "form-group row ">
                 <label for = "longitude" class = "col-sm-2.5 col-form-label">Enter longitude</label>
                 <div class = "col-sm-4">
-                    <input th:field="*{longitude}" type = "number" min=0 step=0.01 class = "form-control" placeholder = "Enter longitude" required>
+                    <input th:field="*{longitude}" type = "number" step=0.00000001 class = "form-control" placeholder = "Enter longitude" required>
                 </div>
             </div>
             <div class = "form-group row ">
                 <label for = "price" class = "col-sm-2.5 col-form-label">Enter price in thousands</label>
                 <div class = "col-sm-4">
-                    <input th:field="*{price}" type = "number" min=0 step=0.01 class = "form-control" placeholder = "Enter price" required>
+                    <input th:field="*{price}" type = "number" min=1 step=0.01 class = "form-control" placeholder = "Enter price" required>
                 </div>
             </div>
             <div class = "form-group row ">
                 <label for = "nBedroom" class = "col-sm-2.5 col-form-label">Enter number of bedrooms</label>
                 <div class = "col-sm-4">
-                    <input th:field="*{nBedroom}" type = "number" class = "form-control" placeholder = "Enter number of bedrooms" required>
+                    <input th:field="*{nBedroom}" type = "number" min=1 class = "form-control" placeholder = "Enter number of bedrooms" required>
                 </div>
             </div>
             <div class = "form-group row ">
                 <label for = "nBathroom" class = "col-sm-2.5 col-form-label">Enter number of bathrooms</label>
                 <div class = "col-sm-4">
-                    <input th:field="*{nBathroom}" type = "number" class = "form-control" placeholder = "Enter number of bathrooms" required>
+                    <input th:field="*{nBathroom}" type = "number" min=1 class = "form-control" placeholder = "Enter number of bathrooms" required>
                 </div>
             </div>
             <div class = "form-group row">
